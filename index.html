@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="cols">
+          <div class="card">
+            <div class="card-back">
+              <img src="./images/bg-card-back.png" alt="" />
+              <span>000</span>
+            </div>
+            <div class="card-front">
+              <div class="card-body">
+                <div class="logo">
+                  <img src="./images/card-logo.svg" alt="" />
+                </div>
+                <div class="card-no" id="card-no">
+                  <h3>0000 0000 0000 0000</h3>
+                </div>
+
+                <div class="card-name">
+                  <h4 id="card-name">Jane Appleseed</h4>
+                  <span id="MMYY">00/00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <form action="">
+            <div class="input-group">
+              <label for="name">CARDHOLDER NAME</label>
+              <input
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="number">CARD NUMBER</label>
+              <input
+                type="text"
+                placeholder="e.g. 1234 5678 9123 0000  "
+                name="name"
+                required
+                id="number"
+              />
+              <span class="err" for="number">Wrong format,numbers only</span>
+            </div>
+            <div class="input-group">
+              <label for="number">EXP. DATE (MM/YY) <span>CVC</span></label>
+              <div class="d-flex">
+                <input type="text" name="" id="MM" placeholder="MM" required />
+                <input type="text" name="" id="YY" placeholder="YY" />
+                <input placeholder="e.g. 123" type="text" name="" id="CVC" />
+              </div>
+              <div class="d-flexs">
+                <span class="err">Can't be blank</span>
+                <span class="err">Can't be blank</span>
+                <span class="err">Can't be blank</span>
+              </div>
+            </div>
+            <button class="submit" type="submit" id="submit">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- 0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
+    Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
+    e.g. 123 Confirm -->
+
+    <!-- Completed state start -->
+
+    <!-- Thank you! We've added your card details Continue -->
+    <!-- 
+    <ss="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.div cla
+    </div> -->
+  </body>
+</html>
